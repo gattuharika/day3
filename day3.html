@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+<header style="word-spacing:20";>
+   <table>
+   	<tr>
+        <th><h1>MDN Web Docs</h1></th><br/>
+        <td>moz://a</td>
+        <th><h1>Technologies</h1></th>
+        <th><h1>References&Guides</h1></th>
+        <th><h1>Feedback</h1></th>
+        <th>
+        	<form style="margin-left";>	
+                <th> <input type="text" name="search MDN    Q"id="search" value="search MDN    Q" /></th>
+                <th><option type="Sigin in">Sigin in</option></th>
+            </form>
+        </th>
+    </tr> 
+    </table>      
+          
+</header>
+
+<nav>
+	<tr>
+	    <th><a href="/Learn web development">Learn web development</a></th>
+        <th><a href="/Structuring the web with HTML">Structuring the web with HTML</a></th>
+        <th><a href="/multimedia and Embeddig">multimedia and Embedding</a></th>
+        <th><a href="/mozilla splash page">mozilla splash page</a></th>
+    </tr>
+</nav>
+<article>
+	<b>Mozilla splash page</b><br/>
+	<th><a href="/previous">previous</a></th>
+	<th><a href="/overview:multimedia and Embedding">overview:multimedia and embedding</a></th><br/>
+	<span>In this assessment, we'll test your knowledge of some of the techniques discussed in this module's articles, getting you to add some images and video to a funky splash page all about Mozilla!</span><br/>
+
+    <span style="background-color: pink";>
+    Prerequisites :Before attempting this assessment you should have already worked through the rest of the <u>Multimedia and embedding module</u>.<br/>
+    Objective     :To test knowledge around embedding images and video in web pages, frames, and HTML responsive image techniques.</span>
+</article>
+
+<section>
+	<h1>Starting point</h1>
+    <p>To start off this assessment, you need to grab the HTML and all the images available in the mdn-splash-page-start directory on github. Save the contents of index.html in a file called index.html on your local drive, in a new directory. Then save pattern.png in the same directory (right click on the image to get an option to save it.)
+
+    Access the different images in the originals directory and save them in the same way; you'll want to save them in a different directory for now, as you'll need to manipulate (some of) them using a graphics editor before they're ready to be used.
+
+    Alternatively, you could use an online tool such as Glitch to create your example. This would also be useful if you want to get it assessed, or ask for help — see the Assessment or further help section at the bottom of this page.
+
+    Note: The example HTML file contains quite a lot of CSS, to style the page. You don't need to touch the CSS, just the HTML inside the <body> element — as long as you insert the correct markup, the styling will make it look correct.
+    <h1>Project brief</h1>
+    In this assessment we are presenting you with a mostly-finished Mozilla splash page, which aims to say something nice and interesting about what Mozilla stands for, and provide some links to further resources. Unfortunately, no images or video have been added yet — this is your job! You need to add some media to make the page look nice and make more sense. The following subsections detail what you need to do:
+
+    <h1>Preparing images</h1>
+    Using your favorite image editor, create 400px wide and 120px wide versions of:
+
+    firefox_logo-only_RGB.png
+    firefox-addons.jpg
+    mozilla-dinosaur-head.png
+    Call them something sensible, e.g. firefoxlogo400.png and firefoxlogo120.png.
+
+    Along with mdn.svg, these images will be your icons to link to further resources, inside the further-info area. You'll also link to the firefox logo in the site header. Save copies of all these inside the same directory as index.html.
+
+    Next, create a 1200px wide landscape version of red-panda.jpg, and a 600px wide portrait version that shows the panda in more of a close up shot. Again, call them something sensible so you can easily identify them. Save a copy of both of these inside the same directory as index.html.
+
+    Note: You should optimize your JPG and PNG images to make them as small as possible, while still looking ok. tinypng.com is a great service for doing this easily.<br/>
+
+    <h1>Adding a logo to the header</h1>
+    Inside the <header> element, add an <img> element that will embed the small version of the Firefox logo in the header.
+
+    <h1>Adding a video to the main article content</h1>
+    Just inside the <article> element (right below the opening tag), embed the YouTube video found at https://www.youtube.com/watch?v=ojcNcvb1olg, using the appropriate YouTube tools to generate the code. The video should be 400px wide.
+
+    <h1>Adding responsive images to the further info links</h1>
+    Inside the <div> with the class of further-info you will find four <a> elements — each one linking to an interesting Mozilla-related page. To complete this section you'll need to insert an <img> element inside each one containing appropriate src, alt, srcset and sizes attributes.
+
+    In each case (except one — which one is inherently responsive?) we want the browser to serve the 120px wide version when the viewport width is 500px wide or less, or the 400px wide version otherwise.
+
+    <h1>Make sure you match the correct images with the correct links!</h1>
+
+    Note: To properly test the srcset/sizes examples, you'll need to upload your site to a server (using Github pages is an easy and free solution), then from there you can test whether they are working properly using browser developer tools such as the Firefox Network Monitor.
+    <h1>An art directed red panda</h1>
+
+    Inside the <div>with the class of red-panda, we want to insert a <picture>element that serves the small portrait panda image if the viewport is 600px wide or less, and the large landscape image otherwise.</p>
+
+
+</section> 
+<figcaption>
+<h1>Example</h1>
+The following screenshots show what the splash page should look like after being correctly marked up, on a wide and narrow screen display.
+</figcaption>
+<figure style="align-items: center";>
+	<img src="images/imag3.png" alt="image"><br/>
+	<img src="images/imag4.png" alt="p4"
+</figure>
+</figcaption>
+<section>
+	<h1>Assessment or further help</h1>
+<span>If you would like your work assessed, or are stuck and want to ask for help:
+
+1.Put your work into an online shareable editor such as CodePen, jsFiddle, or Glitch. Glitch is probably better for this example, as it allows you upload assets like images, whereas some of the other tools don't.<br/>
+2.Write a post asking for assessment and/or help at the MDN Discourse forum. Add the "learning" tag to your post so we are able to more easily find it. Your post should include:<br/>
+A descriptive title such as "Assessment wanted for Mozilla splash page".<br/>
+Details of what you would like us to do — for example what you have already tried, if you are stuck and need help,.<br/>
+A link to the example you want assessed or need help with, in an online editor. This is a good practice to get into — it's very hard to help someone with a coding problem if you can't see their code.<br/>
+A link to the actual task or assessment page, so we can find the question you want help with.</span><br/>
+<th><a href="Previous">previous</a></th>
+<th><a href="Overview: Multimedia and embedding">overview:multimedia and embedding</a></th>
+</section>
+<nav>
+	<h1><u> In line link module</u></h1>
+	<ul type="circle">
+		<li><a href=" images in HTML">Images in HTML</a></li>
+		<li><a href="video and audio content">video and audio content</a></li>
+		<li><a href="Adding vector graphics to the web">Adding vector graphics to the web</a></li>
+		<li><a href="Responsive Images">Responsive images</a></li>
+		<li><a href="Mozilla splash page">mozilla splash page</a></li>
+	</ul>		
+</nav>
+<nav style="background-color: pink">
+	<h1>Found a problem with this page?</h1>
+	<ul type="circle">
+		<li><a href="sources on Github">sources on Github</a></li>
+		<li><a href="Report a problem a content on Github">report a problem a content on Github</a></li>
+		<li><span>Want to fix a problem yourself?see<a href="our contribution guide">our contribution guide</a></span></li>
+	<span>
+		Last Modified: <time> MAR18 2021</time><a href="by MDN contributors">by MDN contributors</a>
+	</span>
+
+</nav>
+<footer style="background-color: green";>
+	<table >
+		<tr>
+		    <th style="text-align: left";>Web Technologies</th>
+		    <th style="text-align: right";>About</th>
+		</tr>
+		<tr>    
+		    <td style="text-align: left";>Learn Web Technologies</td>
+		    <td style="text-align: right";>MDN Web Docs Store</td>
+		</tr>
+		<tr>    
+		    <td style="text-align: left";>About MDN</td>
+		    <td style="text-align: right";>Contact us</td>
+		</tr>
+		<tr>    
+		    <td style="text-align: left";>feedback</td>
+		    <td style="text-align: right";>Firefox</td>
+        </tr>
+
+	</table>	
+
+	
+</footer>
+</body>
+</html>
